@@ -45,3 +45,64 @@ npm error A complete log of this run can be found in: /root/.npm/_logs/2025-05-0
     "react-router-dom": "^7.5.3"
   }
 }
+
+
+
+{
+  "name": "agent-licensing-ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "axios": "^1.9.0",
+    "date-fns": "^4.1.0",
+    "fund": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.5.3",
+    "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+
+
+# Remove node_modules if it exists
+rm -rf node_modules
+
+# Install all required dependencies
+npm install react react-dom react-scripts
+
+# Install your existing dependencies
+npm install
+
+
+npm start
+
+
+
