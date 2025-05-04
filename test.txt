@@ -1,3 +1,41 @@
+
+root@ubuntu-dev:/mnt/c/Users/A296120/git/agent-licensing-ui# npm start
+
+> agent-licensing-ui@0.1.0 start
+> react-scripts start
+
+Could not find a required file.
+  Name: index.html
+  Searched in: /mnt/c/Users/A296120/git/agent-licensing-ui/public
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-security-policy" content="default-src 'self'; frame-src 'self' https://login.microsoftonline.com; connect-src 'self' login.microsoftonline.com; style-src 'self' 'unsafe-inline';">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using Vite"
+    />
+    <title>Agent Licensing</title>
+    <script type="text/javascript" src="/config/config.js"></script>
+  </head>
+  
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/App.jsx"></script>
+  </body>
+</html>
+
+
+
+
+
 root@ubuntu-dev:/mnt/c/Users/A296120/git/agent-licensing-ui# npm install
 
 up to date, audited 113 packages in 817ms
