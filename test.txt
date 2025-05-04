@@ -31,3 +31,17 @@ npm error
 npm error To see a list of scripts, run:
 npm error   npm run
 npm error A complete log of this run can be found in: /root/.npm/_logs/2025-05-04T05_39_21_554Z-debug-0.log
+
+
+{
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "axios": "^1.9.0",
+    "date-fns": "^4.1.0",
+    "fund": "^1.0.0",
+    "react-router-dom": "^7.5.3"
+  }
+}
