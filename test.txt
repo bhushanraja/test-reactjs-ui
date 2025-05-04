@@ -30,6 +30,17 @@ module.exports = function(app) {
     createProxyMiddleware({
       target: 'http://localhost:8080',
       changeOrigin: true,
+      secure: false,       // If using HTTPS with self-signed certs
+      onProxyReq: (proxyReq, req, res) => {
+        // Add headers if needed
+        proxyReq.setHeader('X-Forwarded-Proto', 'http');
+        proxyReq.setHeader('X-Forwarded-Host', 'localhost:3000');
+      },
+      cookieDomainRewrite: 'localhost', // For cookies
+      headers: {
+        // Add any required headers here
+        Connection: 'keep-alive'
+      }
     })
   );
 };
