@@ -19,6 +19,22 @@ public class CorsConfig {
     }
 }
 
+// In your api/dataAccess.js
+const API_BASE_URL = ''; // Empty for proxy
+
+export const fetchEmployeeIds = async (date) => {
+  try {
+    const response = await axios.get(`${API_BASE_URL}/v1/data/employee-ids`, {
+      params: { date },
+      withCredentials: true  // This sends cookies
+    });
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching employee IDs:', error);
+    throw error;
+  }
+};
+
 
 src/setupProxy.js
 
